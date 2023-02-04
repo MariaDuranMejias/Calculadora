@@ -45,24 +45,46 @@ def factorial():
         y = y*i  #Se guarda en una variable el resultado de cada iteracion, que se vayan multiplicando por el nuevo resultado
     return y #Se mprime la variable con el resultado del factorial
 
-def resta():
-    n1 = int(input("Ingrese el primer numero: " ))
-    n2 = int(input("Ingrese el segundo numero: " ))
-    resultado = 0
-    if n1 != n2:
-        resultado = n1-n2
-    return resultado
+# def resta():
+#     n1 = int(input("Ingrese el primer numero: " ))
+#     n2 = int(input("Ingrese el segundo numero: " ))
+#     resultado = 0
+#     if n1 != n2:
+#         resultado = n1-n2
+#     return resultado
 
-def division():
-    n1 = int(input("Ingrese el primer numero:  "))
-    n2 = int(input("Ingrese el segundo numero:  "))
-    resultado = n1 / n2
+# def division():
+#     n1 = int(input("Ingrese el primer numero:  "))
+#     n2 = int(input("Ingrese el segundo numero:  "))
+#     resultado = n1 / n2
 
-    return resultado 
+#     return resultado 
 
-def potencia():
-    n1 = int(input("Ingrese el primer numero:  "))
-    n2 = int(input("Ingrese el segundo numero:  "))
+# def potencia():
+#     n1 = int(input("Ingrese el primer numero:  "))
+#     n2 = int(input("Ingrese el segundo numero:  "))
 
-    resultado = n1 ** n2
-    return resultado
+#     resultado = n1 ** n2
+#     return resultado
+
+def resta():  #Se crea una funcion que permite al usuario ingresar n numeros y cumpla la funcion de resta
+    n1 = int(input("Ingrese el primer numero: " ))  # Se le solicita al usuario el primer digito
+    n2 = int(input("Ingrese el segundo numero: " ))  #Se le solicita al usuario el segundo digito
+    resultado = 0  # Se crea una variable que sera igual a 0
+    if n1 != n2:  # Se crea un condicional que ambos numeros no son iguales
+        resultado = n1-n2 # La variable sera igual a que ambos numeros por el usuario se resten
+    return resultado  # Con la funcion return haremos el print correcto de la resta de la varianle resultado
+
+def division():  #Se crea una funcion que permite al usuario ingresar n numeros y cumpla su funcion de division
+    n1 = int(input("Ingrese el primer numero:  ")) # Se le solicita al usuario el primer digito
+    n2 = int(input("Ingrese el segundo numero:  ")) #Se le solicita al usuario el segundo digito
+    resultado = n1 / n2 # Se crea la variable que sera igual a la division de ambos numeros ingresados por el usuario
+
+    return resultado # Con la funcion return el resultado de la division ingresada por el usuario se imprima 
+
+def potencia():  #Se crea una funcion que permite al usuario ingresar n numeros y cumpla su funcion de potencia
+    n1 = int(input("Ingrese el primer numero:  "))  #Se le solicita al usuario el primer digito
+    n2 = int(input("Ingrese el segundo numero:  "))  # Se le solicita al usuario el segundo digito
+
+    resultado = n1 ** n2  # Se crea la variable resultado que sera igual a la multiplicaion de ambos digitos ingresados por el usuario
+    return resultado  # # Con la funcion return la variable del resultado hara el print con el resultado de la potencia
